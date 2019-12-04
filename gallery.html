@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<title> Ellie's Makeup Corner</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width = device-width, initial scale = 1">
+	<link rel="stylesheet" href="bootstrap.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<!--The section that details about the client and their experiences with makeup work.-->
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+	<ul class="navbar-nav">
+		<li class="nav-item active">
+	  <a class="nav-link" href="index.html"> About</a>
+		</li>
+		<li class="nav-item active">
+	  <a class="nav-link" href="gallery.html"> Gallery</a>
+	    </li>
+		<li class="nav-item active">
+	  <a class="nav-link" href="prices.html"> Prices</a>
+		</li>
+		<li class="nav-item active">
+	  <a class="nav-link" href="contact.html">Contact</a>
+		</li>
+	</ul>
+</nav> 
+
+<!--The image gallery that largely consists of makeup examples the client has done in the past-->
+
+<div class="container-fluid">
+<div class="heading">
+<h1> Image Gallery</h1>
+<p> Here is a series of images of makeup sessions I've done in the past.
+Click on an image to enlarge it below.</p>
+</div>
+
+	<div class="row">
+		<div class="column">
+    <img class="imageone" src="Makeup1.jpg" alt="Debs Glamour" onclick="imageShow(this);">
+	</div>
+	
+	<div class="column">
+	<img class="imagetwo" src="Makeup2.jpg" alt="Editorial Look" onclick="imageShow(this);">
+	</div>
+	
+	<div class="column">
+	<img class="imagethree" src="Makeup5.jpg" alt="Dramatic Smokey Eye" onclick="imageShow(this);">
+	</div>
+	
+    <div class="column">
+	<img class="imagefour" src="Makeup9.jpg" alt="Saturday Night Glamour" onclick="imageShow(this);">
+	</div>
+	
+    <div class="column">
+	<img class="imagefive" src="Makeup10.jpg" alt="Brown & Gold Debs Glamour" onclick="imageShow(this);">
+	</div>	
+	
+    <div class="column">
+	<img class="imagesix" src="Makeup11.jpg" alt="Rose Gold Debs Glamour" onclick="imageShow(this);">
+	</div>
+	
+	<div class="column">
+	<img class="imageseven" src="Picture14.jpg" alt="Sparkly New Years Look" onclick="imageShow(this);">
+	</div>
+
+	<div class="column">
+	<img class="imageeight" src="Picture16.jpg" alt="Inglot Makeover" onclick="imageShow(this);">
+	</div>
+</div>
+
+ 
+<!--The Javascript code that makes an image bigger when clicked.-->
+<div class="imageSize">
+	<span onclick="this.parentElement.style.display='none'" class="closebtn">
+	&times; </span>
+		<img id="expandedImage" src="." alt="What happens when a user clicks on an image" style="width:90%">
+		<div id="imageText"></div>
+</div>
+
+<script src="external.js">
+</script>
+
+<!-- The copyright section of the website-->
+<div class="Footer"> 
+<p> &copy; All aspects of the website belong to the client and to the
+website developer. Ellie's Makeup Corner 2019-onwards. All rights reserved.</p>
+ </div>
+ </div>
+</body>
+</html>
